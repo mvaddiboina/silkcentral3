@@ -10,7 +10,7 @@ import com.sample.calculation.Calculation;
 public class JunitTests {
 	
 	@Test
-	public static void generateReport()
+	public void generateReport()
 	{
 		System.out.println("Executing pre-conditions");
 	}
