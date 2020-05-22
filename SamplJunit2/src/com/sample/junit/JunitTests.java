@@ -2,11 +2,18 @@ package com.sample.junit;
 
 import static org.junit.Assert.*;
 
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.sample.calculation.Calculation;
 
 public class JunitTests {
+	
+	@BeforeClass
+	public static void preCondition()
+	{
+		System.out.println("Executing pre-conditions");
+	}
 	@Test  
     public void testFindMax1(){  
         assertEquals(4,Calculation.findMax(new int[]{1,3,4,2}));  
