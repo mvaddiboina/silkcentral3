@@ -9,8 +9,8 @@ import com.sample.calculation.Calculation;
 
 public class JunitTests {
 	
-	@BeforeClass
-	public static void preCondition()
+	@Test
+	public static void generateReport()
 	{
 		System.out.println("Executing pre-conditions");
 	}
